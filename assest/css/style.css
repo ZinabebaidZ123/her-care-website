@@ -1,0 +1,234 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@500&display=swap');
+
+/* general styling */
+:root{
+  --main-color : 	#1f9471 ;
+  --section-color : #b6d7a8;
+  --alt-section-color:   rgba(232, 250, 208, 0.808);
+  --text-color:#123f1e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  html{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+  }
+  a{
+    color: var(--main-color) !important;
+    font-size: 1.2rem  !important;
+    padding-left: 2rem !important;
+    font-weight: bold;
+  }
+  h1{
+    background:linear-gradient(60deg  , var(--main-color) ,#161616 ,var(--main-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 2.5rem;
+  }
+  h4{
+    color: var(--text-color);
+    font-weight: bold;
+    
+    margin-top: 1.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  /* media query */
+  @media (min-width:300px) {
+    html{
+          font-size: 11px;
+    }
+
+    img{
+        width: 80%;
+    }
+  
+   
+}
+
+@media (min-width:567px) {
+    html{
+          font-size: 13px;
+    }
+    img{
+        width: 70%;
+    }
+   
+}
+@media (min-width:768px){
+    html{
+        font-size: 14px;
+    }
+    img{
+        width: 80%;
+    }
+  
+}
+@media (min-width:992px){
+    html{
+        font-size: 16px;
+    }
+    img{
+        width: 100%;
+    }}
+  section{
+    padding: 7rem  2rem;
+    background-color:  var(--alt-section-color);
+  }
+  footer{
+    background-color: var(--main-color);
+   
+  
+    color: #fff;
+    padding: 3rem;
+  }
+  .navbar .logo{
+    width: 5rem;
+  }
+  .navbar-toggler-icon{
+      color: var(--text-color) !important;
+      font-size: 2rem;
+  }
+  .banner{
+    background-repeat: no-repeat;
+    background-color: var(--section-color);
+    height: 90vh;
+    position: relative;
+  }
+  .circle-top{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 20%;
+    height: 40%;
+    background-color: var(--alt-section-color);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .circle-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    width: 20%;
+    height: 40%;
+    background-color: var(--alt-section-color);
+  
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+ .about-content{
+  background-color: #fff;
+  padding: 5rem;
+
+ }
+ .about-header{
+  background:linear-gradient(60deg  , var(--main-color) ,#161616 ,var(--main-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+.about-content .line{
+  width: 30%;
+  height: 0.2rem;
+  background-color: var(--main-color);
+}
+.brands .brand-card {
+  background-color: #fff;
+  padding: 4rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+  height: 40vh;
+ 
+}
+@media (max-width:567px){
+  .brands .brand-card{
+    height: 30vh;
+  }
+}
+.brands img{
+  width: 5rem;
+   /* height: 80%; */
+}
+.brands .layer{
+  background-color: rgba(182, 215, 168,.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%; 
+  height: 0%;
+  display: none;
+  transition: 1s ease-in-out;
+  color:#161616;
+} 
+.brands .brand-card:hover .layer{
+  width: 100%; 
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  
+}
+.exports{
+  /* background-color: var(--section-color); */
+  background-color: #fff;
+  padding: 3rem;
+}
+.exports-content{
+  width: 100%;
+}
+.exports-content img{
+  width: 80%;
+}
+.expots-content .america{
+  
+  width: 100%;
+}
+footer h2{
+  color:#fff;
+}
+footer i {
+  font-size: 2.5rem;
+}
+
+
+.contact-icon i{
+  margin: 10px;
+  padding: 10px;
+   border: 1px solid var(--main-color);
+   border-radius: 50%;
+   color: var(--section-color);
+   transition: all .5s ease-in-out;
+   cursor: pointer;
+}
+
+
+.contact-icon .fa-instagram:hover{
+  color: rgb(228,64,95);
+  transform: scale(1.2);
+}
+
+.contact-icon .fa-whatsapp:hover{
+  color: #075e54;
+  transform: scale(1.2);
+}
+
+
+.contact-icon .fa-envelope:hover{
+  color: #00B2FF;
+  transform: scale(1.2);
+}
