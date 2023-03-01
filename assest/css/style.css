@@ -225,3 +225,6 @@ footer h4{
   color: #00B2FF;
   transform: scale(1.2);
 }
+.insta a{
+  margin-left: -1.2rem !important;
+}
