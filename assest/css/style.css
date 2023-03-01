@@ -21,9 +21,9 @@
   }
   a{
     color: var(--main-color) !important;
-    font-size: 1.2rem  !important;
+    font-size: 1.4rem  !important;
     padding-left: 2rem !important;
-    font-weight: bold;
+    font-weight: bolder;
   }
   h1{
     background:linear-gradient(60deg  , var(--main-color) ,#161616 ,var(--main-color));
@@ -103,9 +103,12 @@
     width: 100% !important;
     z-index: 99999999999999999 !important;
     background-color: #fff !important;
+  
   }
+  
   .navbar .logo{
-    width: 5rem;
+    width: 30%;
+    margin-bottom: 1rem;
   }
   .navbar-toggler-icon{
       color: var(--text-color) !important;
@@ -113,50 +116,9 @@
   }
   .banner{
     background-repeat: no-repeat;
-    background-color: var(--section-color);
+    background-image: url("https://thumbs.dreamstime.com/b/beauty-background-various-eco-friendly-cosmetic-skin-care-products-beauty-background-various-eco-friendly-cosmetic-184476996.jpg");
     height: 90vh;
-    position: relative;
-  }
-  /* @media (max-width:567px){
-    .banner{
-      height: 50vh;
-    }
-  } */
-  .circle-top{
-    position: absolute;
-    left: 0;
-    top: 0%;
-    width: 20%;
-    height: 40%;
-    background-color: var(--alt-section-color);
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-  .circle-bottom{
-    position: absolute;
-    right: 0;
-    bottom: 0%;
-    width: 20%;
-    height: 40%;
-    background-color: var(--alt-section-color);
-  
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
-  }
-  @media(max-width:992px){
-    .circle-top{
-      border-top-right-radius: 70%;
-      border-bottom-right-radius: 70%;
-      border-bottom-left-radius: 70%;
-    }
-    .circle-bottom{
-      border-top-left-radius: 70%;
-      border-bottom-left-radius: 70%;
-      border-top-right-radius: 70%;
-     
-    }
+    background-size: cover;
   }
  .about-content{
   background-color: #fff;
@@ -164,15 +126,13 @@
 
 
  }
- @media(max-width: 992px){
-  .banner-img{
-    margin-top: 9rem;
-  }
- }
+
+ 
  .about-header{
-  background:linear-gradient(60deg  , var(--main-color) ,#161616 ,var(--main-color));
+  background:linear-gradient(45deg  , var(--main-color) ,#161616 ,var(--main-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
  }
 .about-content .line{
   width: 30%;
@@ -216,7 +176,7 @@
   
 }
 .exports{
-  /* background-color: var(--section-color); */
+
   background-color: #fff;
   padding: 3rem;
 }
@@ -224,43 +184,44 @@
   width: 100%;
 }
 .exports-content img{
-  width: 80%;
+  width: 82%;
+  height: 8rem;
 }
-.expots-content .america{
-  
-  width: 100%;
-}
+
 footer h2{
   color:#fff;
 }
 footer i {
   font-size: 2.5rem;
-}
+  color: var(--section-color);
 
-
-.contact-icon i{
-  margin: 10px;
-  padding: 10px;
    border: 1px solid var(--main-color);
-   border-radius: 50%;
-   color: var(--section-color);
+   
+  
    transition: all .5s ease-in-out;
    cursor: pointer;
 }
 
+footer h4{
+  font-size: 1.3rem;
+  transform: translateY(-0.5rem);
+  color: #fff;
+}
 
-.contact-icon .fa-instagram:hover{
+
+
+ .fa-instagram:hover{
   color: rgb(228,64,95);
   transform: scale(1.2);
 }
 
-.contact-icon .fa-whatsapp:hover{
+.fa-whatsapp:hover{
   color: #075e54;
   transform: scale(1.2);
 }
 
 
-.contact-icon .fa-envelope:hover{
+.fa-envelope:hover{
   color: #00B2FF;
   transform: scale(1.2);
 }

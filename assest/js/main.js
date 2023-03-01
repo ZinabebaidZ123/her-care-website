@@ -33,7 +33,8 @@ let brands=[
                 
                     <div class = "link d-flex  justify-content-center  align-items-center w-100 h-100  " > 
                     <a href="${brands[i].url}" class=""  target="_blank">
-                           <h5> انتقل إلى الموقع</h5>
+                          <h3>Go To The Site</h3>
+
                     </a>
                     </div>
                     </div>
